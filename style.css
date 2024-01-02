@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+body{
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    background-repeat: no-repeat;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: white;
+    margin-left: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    font-size: 20px;
+    /* display: noen; */
+    cursor: pointer;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10rem;
+}
+
+section{
+    padding: 0 19%;
+}
+.hero-text{
+    width: 450px;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 6px;
+}
+.hero-text h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.image img{
+    width: 500px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background-color: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .50s ease;
+    margin-left: 20px;
+}
+
+.hero-text a:hover{
+    border: 1px solid white;
+    background: transparent;
+    transform: translateX(8px);
+}
+
+.hero-text a .cta{
+    background: transparent;
+    border: 1px solid white;
+
+}
+
+.hero-text a .cta i{
+    vertical-align: middle;   
+    margin-left: 5px;
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    /* padding: 0 9%; */
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: block;
+    margin: 35px 0;
+    font-size: 15px;
+    color: white;
+    transition: all .50s ease;
+}
+
+.icons i:hover{
+    color: #4d9559;   
+    transform: translateY(-5px);
+}
+
+.scroll{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll i{
+    display: block;
+    padding: 18px;
+    font-size: 24px;
+    color: white;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .50s ease;
+
+}
+
+.scroll i:hover{
+    transform: translateY(-5px);   
+}
+
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .scroll{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+
+    .icons{
+        left: 7%;
+        transition: .2s;
+    }
+
+}
+
+@media (max-width: 1340px){
+    .image img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+
+    .icons{
+        left: 5%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1458px){
+    .icons{
+        left: 5%;
+        transition: .2s;
+    }
+
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    
+    .hero-text{
+        padding-top: 115px;
+        transition: all .50s ease;
+    }
+    .image{
+        text-align: center;
+    }
+
+    .image img{
+        width: 400px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        transition: all .50s ease;
+    }
+    .icons{
+        display: none;
+
+    }
+    .scroll{
+        display: none;
+    }
+
+}
+
+@media (max-width: 700px){
+    #menu-icon{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 220px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 7px 0;
+        margin-left: 0;
+    }
+}
